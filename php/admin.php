@@ -7,10 +7,10 @@ if(isset($_POST['submit'])){
     $password = trim($_POST['password']);
 
     if(loginUser($username, $password)){
-      header("Location:../dashboard.php");
+      header("Location:../submit.php");
     } else {
         echo "Details Incorrect!";
-        // echo '<meta http-equiv="refresh" content="2; url=../forms/login.html">';
+        echo '<meta http-equiv="refresh" content="2; url=../forms/login.html">';
     }
 
 }
@@ -21,7 +21,7 @@ function loginUser($email, $password){
         from file match that which is passed from the form
     */
 
-    $db = "../storage/users.csv";
+    $db = "../storage/admins.csv";
     $handle = fopen($db, 'r');
 
     while (!feof($handle) ) {

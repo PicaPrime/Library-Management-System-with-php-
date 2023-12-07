@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
 
     if(registerUser($username, $email, $password)){
         echo "User registered successfully!";
-        echo '<meta http-equiv="refresh" content="2; url=/forms/login.html">';
+        echo '<meta http-equiv="refresh" content="2; url=../forms/login.html">';
     } else {
         echo "User not registered!"; 
         echo '<meta http-equiv="refresh" content="2; url=../forms/register.html">';

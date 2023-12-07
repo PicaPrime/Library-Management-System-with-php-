@@ -8,23 +8,55 @@
     <title>Welcome back <?php echo (isset($_SESSION['username']) ? $_SESSION['username'] : null);?></title>
     <link rel="stylesheet" href="src/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+
+    <style>
+    .container {
+        text-align: center;
+    }
+
+    .center-button {
+        display: inline-block;
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+</style>
+
+
+  </head>
 <body>
     <!-- Image and text -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><h2>ZURI-PHP</h2></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item f-right">
-            <a class="nav-link" href="php/logout.php">Logout</a>
-          </li>
-      </div>
-    </nav>
-    <div class="container justify-content-center">
-        <h1 class="">Welcome to Zuri Authentication `<?php echo(isset($_SESSION['username'])) ? $_SESSION['username'] : 'Username';?>`</h1>
+    <nav class="container navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      Library Management
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="forms/login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forms/register.html">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forms/admin.html">Admin</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+
+
+  <br>
+
+    <div class="container justify-content-center">
+        <h1 class="">Welcome <?php echo(isset($_SESSION['username'])) ? $_SESSION['username'] : 'Username';?> </h1>
+    </div>
+
+
+    <br>
+    <a href="list.php" class="container justify-content-center" style="padding-left: 5%;">
+      <button type="button" class="btn btn-primary btn-lg container">view all books</button></a>
+
 </body>
 </html>
