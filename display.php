@@ -1,5 +1,4 @@
 <?php
-
 // Replace this with the path to your JSON file
 $books_json_path = "books.json";
 
@@ -32,14 +31,43 @@ if (isset($_GET['isbn'])) {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title><?php echo $selected_book["title"]; ?></title>
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <style>
+                body {
+                    padding: 20px;
+                }
+
+                h1 {
+                    color: #007bff;
+                }
+
+                p {
+                    margin-bottom: 10px;
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    margin-top: 10px;
+                }
+            </style>
         </head>
         <body>
-            <h1><?php echo $selected_book["title"]; ?></h1>
-            <p>Author: <?php echo $selected_book["author"]; ?></p>
-            <p>Genre: <?php echo "Action, Adventure"; ?></p>
-            <p>Publication Year: <?php echo "year: 1989 " ?></p>
-            <p>Description: <?php echo $selected_book["description"]; ?></p>
-            <p>ISBN: <?php echo $selected_book["isbn"]; ?></p>
+            <div class="container">
+                <h1><?php echo $selected_book["title"]; ?></h1>
+                <p>Author: <?php echo $selected_book["author"]; ?></p>
+                <p><strong>Genre:</strong> <?php echo implode(', ', $selected_book['genre']); ?></p>
+                <p><strong>Description:</strong> <?php echo $selected_book['description']; ?></p>
+                <p><strong>Publication Date:</strong> <?php echo $selected_book['publication_date']; ?></p>
+                <p>ISBN: <?php echo $selected_book["isbn"]; ?></p>
+                <p><strong>Language:</strong> <?php echo $selected_book['language']; ?></p>
+                <p><strong>Pages:</strong> <?php echo $selected_book['pages']; ?></p>
+                <img src="<?php echo $selected_book['cover_image_url']; ?>" alt="Book Cover">
+            </div>
+            
+            <!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript components) -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZJ35wos5PGuxuJZc4ZHAHGByA1YzqkMq6PW75t9R1Qtxh6C0iU6jg5Zf4PDJBJI" crossorigin="anonymous"></script>
         </body>
         </html>
         <?php
@@ -51,5 +79,4 @@ if (isset($_GET['isbn'])) {
     // Display a message if 'isbn' parameter is not set
     echo "ISBN parameter not provided.";
 }
-
 ?>

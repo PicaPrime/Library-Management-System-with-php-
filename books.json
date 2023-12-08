@@ -1,40 +1,94 @@
 {
-  "books": [
-    {
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "description": "A timeless classic of love, class, and social commentary.",
-      "isbn": "9780140439518",
-      "publisher": "Penguin Classics",
-      "publication_date": "1813",
-      "genre": ["Romance", "Classic Literature"],
-      "language": "English",
-      "pages": 224,
-      "cover_image_url": "https://example.com/pride-and-prejudice.jpg"
-    },
-    {
-      "title": "The Lord of the Rings",
-      "author": "J. R. R. Tolkien",
-      "description": "An epic fantasy adventure that has captivated readers for generations.",
-      "isbn": "9780007139709",
-      "publisher": "HarperCollins",
-      "publication_date": "1954",
-      "genre": ["Fantasy", "Adventure"],
-      "language": "English",
-      "pages": 1178,
-      "cover_image_url": "https://example.com/lord-of-the-rings.jpg"
-    },
-    {
-      "title": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "description": "A powerful and moving story about racism, prejudice, and justice.",
-      "isbn": "9780446310726",
-      "publisher": "Harper Perennial",
-      "publication_date": "1960",
-      "genre": ["Historical Fiction", "Southern Literature"],
-      "language": "English",
-      "pages": 324,
-      "cover_image_url": "https://example.com/to-kill-a-mockingbird.jpg"
-    }
-  ]
+    "books": [
+        {
+            "title": "Front-end web development the Big Nerd Ranch guide",
+            "author": "Aquino, Chris, author.; Gandee, Todd, author.",
+            "description": "Front-End Web Development: The Big Nerd Ranch Guide brings together all the crucial JavaScript, HTML5, and CSS3 skills that experienced developers need to succeed in modern front-end development. The action in software development has shifted from packaged software to software-as-a-service (SAAS) built with front-end web development tools. All over the world, companies are desperate to hire software professionals with these new skills; job placement services are scrambling to find candidates. 'Front-End Web Development' brings together all the crucial JavaScript, HTML5, and CSS3 skills that experienced developers need to succeed in modern front-end development.",
+            "isbn": "9780134432571",
+            "publisher": "Atlanta : Big Nerd Ranch Guides",
+            "publication_date": "2016",
+            "genre": [
+                "web development",
+                "Graphical & digital media applications"
+            ],
+            "language": "English",
+            "pages": 224,
+            "cover_image_url": "https:\/\/proxy-eu.hosted.exlibrisgroup.com\/exl_rewrite\/syndetics.com\/index.php?client=primo&isbn=9780134432571\/sc.jpg"
+        },
+        {
+            "title": "Dreamweaver Ultradev : fast & easy Web development",
+            "author": "Bakhania, Aneesha",
+            "description": "A well structured book about web development",
+            "isbn": "0761531645",
+            "publisher": "Rocklin, Calif. Prima Tech",
+            "publication_date": "2000",
+            "genre": [
+                "web",
+                "html",
+                "css"
+            ],
+            "language": "English",
+            "pages": 343,
+            "cover_image_url": "https:\/\/proxy-eu.hosted.exlibrisgroup.com\/exl_rewrite\/syndetics.com\/index.php?client=primo&isbn=0761531645\/sc.jpg"
+        },
+        {
+            "title": "Web development with JavaScript and Ajax illuminated",
+            "author": "Allen, Richard fl. 2009 ",
+            "description": "A powerful and moving story about racism, prejudice, and justice.",
+            "isbn": "9780763754891",
+            "publisher": "Harper Perennial",
+            "publication_date": "2009",
+            "genre": [
+                "web development",
+                "academic Literature"
+            ],
+            "language": "English",
+            "pages": 324,
+            "cover_image_url": "https:\/\/proxy-eu.hosted.exlibrisgroup.com\/exl_rewrite\/syndetics.com\/index.php?client=primo&isbn=9780763754891\/sc.jpg"
+        },
+        {
+            "title": "Human factors and web development",
+            "author": "Ratner, Julie , Richard fl. 2009 ",
+            "description": "Web sites -- Design Web sites -- Psychological aspects World Wide Web -- Psychological aspects Human-computer interaction",
+            "isbn": "0805852255",
+            "publisher": "Harper Perennial",
+            "publication_date": "2003",
+            "genre": [
+                "web development",
+                "academic Literature",
+                "Human-computer interaction"
+            ],
+            "language": "English",
+            "pages": 354,
+            "cover_image_url": "https:\/\/proxy-eu.hosted.exlibrisgroup.com\/exl_rewrite\/syndetics.com\/index.php?client=primo&isbn=0805852255\/sc.jpg"
+        },
+        {
+            "title": "Dreamweaver Ultradev : fast & easy Web development",
+            "author": "Bakhania, Aneesha",
+            "description": "A well structured book about web development",
+            "isbn": "0761531645",
+            "publisher": "Rocklin, Calif. Prima Tech",
+            "publication_date": "2000",
+            "genre": [
+                "web",
+                "html",
+                "css"
+            ],
+            "language": "English",
+            "pages": 343,
+            "cover_image_url": "https:\/\/proxy-eu.hosted.exlibrisgroup.com\/exl_rewrite\/syndetics.com\/index.php?client=primo&isbn=0761531645\/sc.jpg"
+        },
+        {
+            "title": "pokemon",
+            "author": "ash",
+            "description": "demo book",
+            "isbn": "11111111",
+            "publisher": "demo",
+            "publication_date": "1098",
+            "genre": "demo",
+            "language": "demo",
+            "pages": "343",
+            "cover_image_url": "https:\/\/proxy-eu.hosted.exlibrisgroup.com\/exl_rewrite\/syndetics.com\/index.php?client=primo&isbn=0805852255\/sc.jpg"
+        }
+    ]
 }
