@@ -50,7 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         fclose($file);
 
         // Optionally, you can redirect the user to a success page
-        header('Location: submit.php');
+        echo "<h1> new book added</h1>";
+        header('Location: new_book.php');
         exit();
     }
 }
